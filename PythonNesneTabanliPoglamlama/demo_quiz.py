@@ -16,11 +16,25 @@ class Quiz:
 
     def getQuestion(self):
         return self.questions[self.questionIndex]
+        
     def loadQuestion(self):
         if len(self.questions)==self.questionIndex:
             self.showScore()
         else:
-            self.displayQuestion()
+            self.displayProgress()
+            self.displayProgress()
+        
+    def showScore(self):
+        print('score ',self.score)
+
+    def displayProgress(self):
+        totalQuestion =len(self.questions)
+        questionNumber = self.questionIndex + 1
+
+        if questionNumber>totalQuestion:
+            print('bitti')
+        else:
+            print(f'Question {questionNumber} of {totalQuestion}'.center(100,'*'))
     def displayQuestion(self):
         Question = self.getQuestion()
         print(f'Soru {self.questionIndex + 1}: {Question.text}')
@@ -43,8 +57,7 @@ class Quiz:
 
     
 
-    def showScore(self):
-        pass
+   
 q1=Question('En iyi programlama dili hangisidir ?',['C#','Python','Javascript','java'],'Python')
 q2=Question('En popüler programlama dili hangisidir ?',['C#','java','Javascript','Python'],'Python')
 q3=Question('En çok kazandıran programlama dili hangisidir ?',['C#','Javascript','Python','java'],'Python')
@@ -53,4 +66,4 @@ questions=[q1,q2,q3]
 
 quiz = Quiz(questions)
 
-quiz.displayQuestion()
+quiz.loadQuestion()
