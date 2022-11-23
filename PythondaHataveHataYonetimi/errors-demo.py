@@ -35,4 +35,6 @@ for x in liste:
 password=input('Bir sifre giriniz turkce karakter kullanmayaniz')
 if(re.search("[ı,ğ,ü,ö,ç]",password)):
     raise Exception("türkçe karakter kullanma")
-#4 faktoriyel fonksiyonu oluşturup fonksiyona geleen değer için hata veriniz
+#4 faktoriyel fonksiyonu oluşturup fonksiyona 
+# geleen değer için hata veriniz
+

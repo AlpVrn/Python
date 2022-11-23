@@ -40,3 +40,4 @@ class person:
             self.name=name
 
 person("Aliiiiiiiiiiiiii",1989)
+#https://www.dosya.tc/server39/bf7imc/Basic.rar.html
