@@ -1,4 +1,0 @@
-Alp Varna : 2,3,4
-Alp Mehmet : 56,87,74
-Ege Varna : 43,23,53
-Oba aaa : 78,98,100
